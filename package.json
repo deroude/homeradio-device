@@ -1,0 +1,36 @@
+{
+  "name": "homeradio-device",
+  "version": "1.0.0",
+  "description": "Homeradio module installed on the device",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js --exec babel-node --presets env",
+    "build": "babel src -d dist --presets env",
+    "serve": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deroude/homeradio-device.git"
+  },
+  "keywords": [
+    "radio",
+    "rest",
+    "node"
+  ],
+  "author": "Valentin Raduti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deroude/homeradio-device/issues"
+  },
+  "homepage": "https://github.com/deroude/homeradio-device#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "body-parser": "^1.18.3",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env":"^1.7.0"
+  }
+}
