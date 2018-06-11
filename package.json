@@ -25,12 +25,13 @@
   "homepage": "https://github.com/deroude/homeradio-device#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "cors": "^2.8.4",
     "body-parser": "^1.18.3",
     "request": "^2.87.0"
   },
   "devDependencies": {
-    "nodemon": "^1.17.4",
     "babel-cli": "^6.26.0",
-    "babel-preset-env":"^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.17.5"
   }
 }
