@@ -18,7 +18,6 @@ const shoutcast = {
 };
 
 router.get('/genre/primary', function (req, res, next) {
-  console.log("Primary genres requested");
   request(shoutcast.apiUrl("/genre/primary"), { json: true }, (err, inner, body) => {
     if (err) { console.log(err); res.send(err); }
     res.send(body.response.data);
